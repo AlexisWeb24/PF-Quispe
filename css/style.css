@@ -37,10 +37,15 @@ header div h1{
     color: #0FC6B5;
     text-decoration: none;
 }
+form{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 15px;
+}
 form select{
     background-color: #212529;
     color: #0FC6B5;
-    width: 80%;
+    width: 300px;
     height: 50px;
     font-size: 1.3em;
 }
@@ -99,6 +104,99 @@ form select{
     }
 .bg-black{
     background-color: black;
+}
+.store{
+    display: grid;
+    grid-template-columns: 35% 50%;
+    grid-template-rows: repeat(6,190px);
+    grid-template-areas: 
+    "filters prod1"
+    "filters prod2"
+    "filters prod3"
+    "filters prod4"
+    "filters prod5"
+    "filters prod6";
+}
+.store .filters{
+    grid-area: filters;
+}
+.store .prod1{
+    grid-area: prod1;
+    display: flex;
+    background-color: #212529;
+    padding: 10px;
+    border-radius: 5px;
+}
+.store .prod2{
+    grid-area: prod2;
+    display: flex;
+    background-color: #212529;
+    padding: 10px;
+    border-radius: 5px;
+}
+.store .prod3{
+    grid-area: prod3;
+    display: flex;
+    background-color: #212529;
+    padding: 10px;
+    border-radius: 5px;
+}
+.store .prod4{
+    grid-area: prod4;
+    display: flex;
+    background-color: #212529;
+    padding: 10px;
+    border-radius: 5px;
+}
+.store .prod5{
+    grid-area: prod5;
+    display: flex;
+    background-color: #212529;
+    padding: 10px;
+    border-radius: 5px;
+}
+.store .prod6{
+    grid-area: prod6;
+    display: flex;
+    background-color: #212529;
+    padding: 10px;
+    border-radius: 5px;
+}
+.products{
+    background-image: url(../img/headers/header1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+    padding: 180px;
+}
+.nosotros{
+    background-image: url(../img/headers/nosotros.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+    padding: 180px;
+}
+.servicios{
+    background-image: url(../img/headers/servicios\ .jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+    padding: 180px;
+}
+.contacto{
+    background-image: url(../img/headers/contacto.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+    padding: 180px;
 }
 /* selector universal */
 *{
