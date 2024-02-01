@@ -1,0 +1,23 @@
+// extends
+.prod-base{
+    display: flex;
+    background-color: $secondaryColor;
+    padding: 10px;
+    border-radius: 5px;
+}
+.header-base{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+    padding: 180px;
+}
+// mixins
+@mixin flex($dire,$wrap,$justi,$align){
+    display: flex;
+    flex-direction: $dire;
+    flex-wrap: $wrap;
+    justify-content: $justi;
+    align-items: $align;
+}

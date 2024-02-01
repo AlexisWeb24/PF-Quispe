@@ -1,0 +1,82 @@
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap');
+// vars
+$mainFont:'Nunito', sans-serif;
+// weights
+$ligth:300;
+$regular:400;
+$bold:600;
+// colors
+$mainColor: #0FC6B5;
+$secondaryColor: #212529;
+$white: rgb(244, 238, 238);
+$black: rgb(16, 15, 15);
+// sizies
+$sm:1.1em;
+$md:1.2em;
+$lg:1.4em;
+$xl:2.4em;
+$xxl:3em;
+// todo lo general
+*{
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: $black;
+}
+header{
+    h1{
+        font-size: $xxl;
+        color: $mainColor;
+        text-decoration: none;
+    }
+}
+h2{
+    font-size: $md;
+    text-align: center;
+    color: $mainColor;
+}
+p{
+    color: $white;
+}
+footer{
+    padding-top: 60px;
+    padding-bottom: 15px;
+    font-size: $sm;
+    img{
+        width: 80px;
+    }
+    svg{
+        color: $mainColor;
+        width: 20px;
+    }
+    ul{
+        list-style: none;
+        width: 25%;
+    }
+    a{
+        color: $white;
+        text-decoration: underline;
+        line-height: 2.2em;
+    }
+}
+// cards
+.card{
+    background-color: $secondaryColor;
+    h2{
+        color: $mainColor;
+        font-size: $lg;
+    }
+    p{
+        font-size: $md;
+    }
+}
+.bg-card{
+    background-color: $secondaryColor;
+    color: $white;
+    border: solid $mainColor 3px;
+    &:hover{
+        background-color: $mainColor;
+    }
+}

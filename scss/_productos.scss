@@ -1,0 +1,58 @@
+// filtros
+form{
+    @include flex(row,nowrap,flex-end,center,);
+    padding-right: 15px;
+    select{
+        background-color: $secondaryColor;
+        color: $mainColor;
+        width: 300px;
+        height: 50px;
+        font-size: $lg;
+    }
+
+}
+// tienda
+.store{
+    display: grid;
+    grid-template-columns: 35% 50%;
+    grid-template-rows: repeat(6,190px);
+    grid-template-areas: 
+    "filters prod1"
+    "filters prod2"
+    "filters prod3"
+    "filters prod4"
+    "filters prod5"
+    "filters prod6";
+    .filters{
+        grid-area: filters;
+    }
+    .prod1{
+        @extend .prod-base;
+        grid-area: prod1;
+        
+    }
+    .prod2{
+        @extend .prod-base;
+        grid-area: prod2;
+        
+    }
+    .prod3{
+        @extend .prod-base;
+        grid-area: prod3;
+    }
+    .prod4{
+        @extend .prod-base;
+        grid-area: prod4;
+    }
+    .prod5{
+        @extend .prod-base;
+        grid-area: prod5;
+    }
+    .prod6{
+        @extend .prod-base;
+        grid-area: prod6;
+    }
+    p{
+        font-size: $md;
+    }
+}

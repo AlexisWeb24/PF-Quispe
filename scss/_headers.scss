@@ -1,0 +1,17 @@
+// headers
+.header-products{
+    @extend .header-base;
+    background-image: url(../img/headers/productos.webp);
+}
+.header-nosotros{
+    @extend .header-base;
+    background-image: url(../img/headers/nosotros.webp);
+}
+.header-servicios{
+    @extend .header-base;
+    background-image: url(../img/headers/servicios.webp);
+}
+.header-contacto{
+    @extend .header-base;
+    background-image: url(../img/headers/contacto.webp);
+}

@@ -1,0 +1,36 @@
+// nav - menu
+.menu{
+    background-color: $black;
+    padding: 8px 30px;
+    svg{
+        width: 30px;
+        fill: gray;
+    }
+    .navbar-toggler{
+        border: solid gray 2px;
+    }
+    img{
+        width: 100px;
+    }
+    ul{
+        li{
+        margin-right: 20px;
+            a{
+                text-decoration: none;
+                color: $mainColor;
+                font-size: $lg;
+                // subrayado animado
+                background-image: linear-gradient(currentColor, currentColor);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                transition: background-size .3s;
+                &:hover{
+                    color: $white;
+                    // subrayado animado
+                    background-size: 100% 2px;
+                }
+            }
+        }  
+    } 
+}
