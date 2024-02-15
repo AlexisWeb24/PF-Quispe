@@ -30,6 +30,6 @@ El proceso de desarrollo ha sido muy emocionante y a la misma vez muy complicado
 
 
 ## Links
-Repositorio GitHub:
-Deployment de GitHub Pages:
-Mi dominio en Vercel:
+Repositorio de GitHub: https://github.com/AlexisWeb24/PF-Quispe.git
+Deployment de GitHub Pages: https://alexisweb24.github.io/PF-Quispe/
+Mi dominio en Netlify: https://alexquispe-proyectofinal.netlify.app
