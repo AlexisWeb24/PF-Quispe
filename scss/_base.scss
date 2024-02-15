@@ -1,11 +1,6 @@
 // fonts
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap');
 // vars
-$mainFont:'Nunito', sans-serif;
-// weights
-$ligth:300;
-$regular:400;
-$bold:600;
 // colors
 $mainColor: #0FC6B5;
 $secondaryColor: #212529;
@@ -41,8 +36,6 @@ p{
     color: $white;
 }
 footer{
-    padding-top: 60px;
-    padding-bottom: 15px;
     font-size: $sm;
     img{
         width: 80px;

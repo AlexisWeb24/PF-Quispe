@@ -25,8 +25,6 @@ p {
 }
 
 footer {
-  padding-top: 60px;
-  padding-bottom: 15px;
   font-size: 1.1em;
 }
 footer img {
@@ -66,20 +64,13 @@ footer a {
   background-color: #0FC6B5;
 }
 
-.prod-base, .store .prod6, .store .prod5, .store .prod4, .store .prod3, .store .prod2, .store .prod1 {
-  display: flex;
-  background-color: #212529;
-  padding: 10px;
-  border-radius: 5px;
-}
-
 .header-base, .header-contacto, .header-servicios, .header-nosotros, .header-products {
-  background-position: center center;
+  height: 50vh;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   width: 100%;
-  padding: 180px;
 }
 
 .menu {
@@ -115,26 +106,63 @@ footer a {
 }
 
 .header-products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
   background-image: url(../img/headers/productos.webp);
 }
 
 .header-nosotros {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
   background-image: url(../img/headers/nosotros.webp);
 }
 
 .header-servicios {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
   background-image: url(../img/headers/servicios.webp);
 }
 
 .header-contacto {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
   background-image: url(../img/headers/contacto.webp);
 }
 
 .title-index h1 {
+  padding-top: 80px;
+  padding-bottom: 0px;
   font-size: 2.4em;
   text-align: center;
-  padding-top: 60px;
   color: #0FC6B5;
+}
+
+.card-index {
+  padding-top: 15px;
+  padding-bottom: 80px;
+}
+
+.prod-index {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.prod-index p {
+  width: 100%;
 }
 
 form {
@@ -143,51 +171,124 @@ form {
   flex-wrap: nowrap;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 15px;
 }
 form select {
   background-color: #212529;
   color: #0FC6B5;
-  width: 300px;
+  width: 250px;
   height: 50px;
   font-size: 1.4em;
 }
 
 .store {
-  display: grid;
-  grid-template-columns: 35% 50%;
-  grid-template-rows: repeat(6, 190px);
-  grid-template-areas: "filters prod1" "filters prod2" "filters prod3" "filters prod4" "filters prod5" "filters prod6";
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
 }
-.store .filters {
-  grid-area: filters;
+.store .products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
 }
-.store .prod1 {
-  grid-area: prod1;
+.store figure {
+  width: 45%;
 }
-.store .prod2 {
-  grid-area: prod2;
+.store figure img {
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
-.store .prod3 {
-  grid-area: prod3;
-}
-.store .prod4 {
-  grid-area: prod4;
-}
-.store .prod5 {
-  grid-area: prod5;
-}
-.store .prod6 {
-  grid-area: prod6;
-}
-.store p {
+.store figure p {
   font-size: 1.2em;
+}
+
+.card-padd {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 @media (width < 992px) {
   ul.text-center {
     width: 100%;
   }
+  .card {
+    margin-bottom: 30px;
+  }
+}
+@media (width < 768px) {
+  .card {
+    margin-bottom: 30px;
+  }
+  .card p {
+    font-size: 1.4em;
+  }
+  .store select {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .store figure {
+    width: 94%;
+  }
+  .store figure div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .store figure div p {
+    text-align: center;
+    font-size: 1.4em;
+  }
+}
+.bg-error {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-image: linear-gradient(125deg, #6a89cc, #b8e994);
+}
+
+.error-404 {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.error-404 h2 {
+  color: #343434;
+  font-size: 2.4em;
+}
+.error-404 p {
+  color: #343434;
+  font-size: 1.4em;
+}
+.error-404 h1 {
+  font-size: 160px;
+  margin: 0;
+  font-weight: 900;
+  letter-spacing: 20px;
+  background: url(../img/error-404/error-404.webp) center no-repeat;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.error-404 a {
+  text-decoration: none;
+  background: rgba(229, 80, 57, 0.6666666667);
+  color: rgb(244, 238, 238);
+  padding: 12px 24px;
+  display: inline-block;
+  border-radius: 25px;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+.error-404 a:hover {
+  background: #e55039;
 }
 
 /*# sourceMappingURL=main.css.map */

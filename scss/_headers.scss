@@ -1,17 +1,21 @@
 // headers
 .header-products{
     @extend .header-base;
+    @include flex(row,nowrap,center,center);
     background-image: url(../img/headers/productos.webp);
 }
 .header-nosotros{
     @extend .header-base;
+    @include flex(row,nowrap,center,center);
     background-image: url(../img/headers/nosotros.webp);
 }
 .header-servicios{
     @extend .header-base;
+    @include flex(row,nowrap,center,center);
     background-image: url(../img/headers/servicios.webp);
 }
 .header-contacto{
     @extend .header-base;
+    @include flex(row,nowrap,center,center);
     background-image: url(../img/headers/contacto.webp);
 }
